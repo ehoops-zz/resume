@@ -1,0 +1,46 @@
+.Card {
+  display: grid;
+  height: 150px;
+  width: 450px;
+  grid-template-areas: "category . more"
+                       "main main main"
+                       "main main main"
+                       "tech tech tech";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 30px 2fr 1fr;
+
+  background-color: #42c2f4;
+  border: 2px solid;
+  border-color: black;
+  color: white;
+  margin: auto;
+}
+
+.Card-Category {
+  border: 2px solid;
+  color: white;
+  line-height: 2;
+  grid-area: category;
+}
+
+.Card-MoreInfo {
+  border: 2px solid;
+  color: white;
+  line-height: 2;
+  grid-area: more;
+}
+
+.Card-Main {
+  color: black;
+  font-size: 200%;
+  grid-area: main;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.Card-Tech {
+  color: black;
+  grid-area: tech;
+  border-top: 2px solid;
+}
