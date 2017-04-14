@@ -1,0 +1,38 @@
+
+
+.App-header {
+  display: grid;
+  grid-template-areas: "name logos about pdf";
+  grit-template-columns: 25% 50% 12.5% 12.5%;
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.Name {
+  grid-area: name;
+  line-height: 50px;
+  font-size: 150%;
+}
+
+.Logo {
+  grid-area: logos;
+  height: 40px;
+  width: 40px;
+  background-size: 100%;
+  background-color: #222;
+  border: none;
+}
+
+.LinkedIn {
+  background-image: url('./2000px-Linkedin_icon.svg.png');
+}
+
+.GitHub {
+  background-image: url('./GitHub-Mark/PNG/GitHub-Mark-Light-64px.png');
+}
+
+.Twitter {
+  background-image: url('./BrandGuidelineLogos/TwitterLogo.png');
+}
