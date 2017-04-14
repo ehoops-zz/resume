@@ -2,22 +2,24 @@ import React, { Component } from 'react';
 import './Card.css';
 import categoryColors from './colors';
 
-class Card extends Component {
+export default class Card extends Component {
 
   render() {
     const card = this.props;
+    const bgColor = categoryColors.get(card.category);
     return (
-      <div className="Card">
-        <div className="Card-MoreInfo">More...</div>
+      <div className="Card"
+        style={{backgroundColor: card.cardColor}} >
+        <a className="Card-MoreInfo" href={card.link}
+          style={{backgroundColor: bgColor}} >More...</a>
         <div className="Card-Category"
-          style={{backgroundColor: categoryColors.get(card.category)}} >
-          {card.category} 
+          style={{backgroundColor: bgColor}} >
+          {card.category}
         </div>
-        <div className="Card-Main">{card.main}</div>
-        <div className="Card-Tech">{card.tech}</div>
+        <div className="Card-Main">{card.title}</div>
+        <div className="Card-Date">{card.date}</div>
+        <div className="Card-Details">{card.details}</div>
       </div>
     );
   }
 }
-
-export default Card;

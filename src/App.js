@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Card from './Card';
+import CardCarousel from './CardCarousel'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Resume - Under construction</h2>
         </div>
 
-        <Card
-          category="Projects"
-          main="Basketball Workout Generator"
-          tech="Javascript, Node, React, ReactBootstrap, ReactRouter, Jest"
-        />
+        <CardCarousel />
       </div>
     );
   }
 }
-
-export default App;
