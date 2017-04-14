@@ -8,12 +8,21 @@ export default class CardCarousel extends Component {
     this.state = {
       inFocusIndex: 0
     };
-  }
+  };
+
+  updateFocus() {
+    const inFocusIndex = (this.state.inFocusIndex + 1) % cardInfo.length;
+    this.setState({inFocusIndex});
+  };
 
   render() {
-    let cards = cardInfo.map(function(card, index) {
-      let bgColor = index === this.state.inFocusIndex ? '#e842f4' : '#9bcfe8';
-      return (
+    let cards = [];
+    let iFocus = this.state.inFocusIndex;
+    for (let i = iFocus; i < iFocus + cardInfo.length; i++) {
+      let index = i % cardInfo.length;
+      let card = cardInfo[index];
+      let bgColor = index === iFocus ? '#41d9f4' : '#9bcfe8';
+      cards.push(
         <li key={`card${index}`} >
           <Card
             title={card.title}
@@ -25,9 +34,13 @@ export default class CardCarousel extends Component {
           />
         </li>
       );
-    }, this);
+    }
+
     return (
-      <ol>{cards}</ol>
+      <div>
+        <button onClick={() => this.updateFocus()} >Next Card</button>
+        <ol>{cards}</ol>
+      </div>
     )
   }
 }
