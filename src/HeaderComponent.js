@@ -6,7 +6,10 @@ export default class HeaderComponent extends Component {
   render () {
     return (
       <div className="App-header">
-        <div className="Name">E. Hoops</div>
+        <button className="Name"
+              onClick={() => {this.props.onPageClick("main")}} >
+          E. Hoops
+        </button>
         <div className="Logos">
           <button className="Logo LinkedIn"
             onClick={() => window.location.href="https://www.linkedin.com/in/erin-hoops-a7786935/"} >
@@ -18,10 +21,10 @@ export default class HeaderComponent extends Component {
             onClick={() => window.location.href="https://twitter.com/Erin3112"}>
           </button>
         </div>
-        <a className="About"
-              href="/About">
+        <button className="About"
+              onClick={() => {this.props.onPageClick("about")}} >
           About Me
-        </a>
+        </button>
         <a className="ResumeLink"
               href="https://app.box.com/s/vel1tfoqec4swegae8twr39ly7180yp4">
         Resume PDF

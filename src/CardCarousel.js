@@ -18,9 +18,6 @@ export default class CardCarousel extends Component {
   };
 
   filterByCategory(categorySubset) {
-    console.log('filter called');
-    console.log(`categorySubset is ${categorySubset}`);
-    console.log(categorySubset);
     this.setState({categorySubset});
   }
 
@@ -30,7 +27,7 @@ export default class CardCarousel extends Component {
     let catSubset = this.state.categorySubset;
     for (let i = 0; i < cardInfo.length; i++) {
       let card = cardInfo[i];
-      let bgColor = i === iFocus ? '#EAF2EF' : '#CFD6D3';
+      let bgColor = '#CFD6D3';
       if (!catSubset || card.category === catSubset) {
         cards.push(
           <div key={`card${i}`} >

@@ -14,6 +14,9 @@
   grid-area: name;
   line-height: 50px;
   font-size: 250%;
+  color: white;
+  background-color: transparent;
+  border: none;
 }
 
 .Logo {
@@ -42,7 +45,8 @@
   line-height: 50px;
   font-size: 125%;
   color: white;
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 
 .ResumeLink {

@@ -29,7 +29,6 @@ export default class CategoryList extends Component {
         Show All
       </button>
     );
-    console.log(categories);
 
     return (
       <div>{categories}</div>
