@@ -18,7 +18,8 @@ export default class HeaderComponent extends Component {
             onClick={() => window.location.href="https://twitter.com/Erin3112"}>
           </button>
         </div>
-        <a className="About" >
+        <a className="About"
+              href="/About">
           About Me
         </a>
         <a className="ResumeLink"

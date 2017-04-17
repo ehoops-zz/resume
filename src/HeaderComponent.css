@@ -41,6 +41,8 @@
   grid-area: about;
   line-height: 50px;
   font-size: 125%;
+  color: white;
+  text-decoration: none;
 }
 
 .ResumeLink {
