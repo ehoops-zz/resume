@@ -60,6 +60,18 @@ const cardInfo = [
     date: "January 2013 - June 2013",
     category: "Research",
     details: "Created visual stimuli using Open GL, Processing"
+  },
+  {
+    title: "Caltech",
+    date: "August 2008 - June 2012",
+    category: "Education",
+    details: "BS Engineering and Applied Science. Concentration: Computation and Neural Systems"
+  },
+  {
+    title: "Brown University",
+    date: "September 2012 - August 2014",
+    category: "Education",
+    details: "MA Neuroscience"
   }
 ];
 
