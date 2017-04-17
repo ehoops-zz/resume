@@ -18,12 +18,11 @@ export default class CardCarousel extends Component {
   render() {
     let cards = [];
     let iFocus = this.state.inFocusIndex;
-    for (let i = iFocus; i < iFocus + cardInfo.length; i++) {
-      let index = i % cardInfo.length;
-      let card = cardInfo[index];
-      let bgColor = index === iFocus ? '#41d9f4' : '#9bcfe8';
+    for (let i = 0; i < cardInfo.length; i++) {
+      let card = cardInfo[i];
+      let bgColor = i === iFocus ? '#EAF2EF' : '#CFD6D3';
       cards.push(
-        <li key={`card${index}`} >
+        <div key={`card${i}`} >
           <Card
             title={card.title}
             date={card.date}
@@ -32,14 +31,14 @@ export default class CardCarousel extends Component {
             link={card.link}
             cardColor={bgColor}
           />
-        </li>
+        </div>
       );
     }
 
     return (
       <div>
         <button onClick={() => this.updateFocus()} >Next Card</button>
-        <ol>{cards}</ol>
+        {cards}
       </div>
     )
   }

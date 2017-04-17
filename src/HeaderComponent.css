@@ -13,7 +13,7 @@
 .Name {
   grid-area: name;
   line-height: 50px;
-  font-size: 150%;
+  font-size: 250%;
 }
 
 .Logo {
@@ -35,4 +35,18 @@
 
 .Twitter {
   background-image: url('./BrandGuidelineLogos/TwitterLogo.png');
+}
+
+.About {
+  grid-area: about;
+  line-height: 50px;
+  font-size: 125%;
+}
+
+.ResumeLink {
+  grid-area: pdf;
+  line-height: 50px;
+  font-size: 125%;
+  color: white;
+  text-decoration: none;
 }

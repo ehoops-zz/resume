@@ -10,8 +10,9 @@ export default class Card extends Component {
     return (
       <div className="Card"
         style={{backgroundColor: card.cardColor}} >
-        <a className="Card-MoreInfo" href={card.link}
-          style={{backgroundColor: bgColor}} >More...</a>
+
+        {card.link ? <a className="Card-MoreInfo" href={card.link}
+          style={{backgroundColor: bgColor}} >More...</a> : null}
         <div className="Card-Category"
           style={{backgroundColor: bgColor}} >
           {card.category}
