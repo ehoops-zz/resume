@@ -23,7 +23,6 @@ export default class CardCarousel extends Component {
 
   render() {
     let cards = [];
-    let iFocus = this.state.inFocusIndex;
     let catSubset = this.state.categorySubset;
     for (let i = 0; i < cardInfo.length; i++) {
       let card = cardInfo[i];

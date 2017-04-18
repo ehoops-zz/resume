@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CardCarousel from './CardCarousel';
 import HeaderComponent from './HeaderComponent';
+import AboutPage from './AboutPage';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export default class App extends Component {
 
   render() {
     let page = this.state.activePage === "main" ?
-      <CardCarousel /> : <div>test</div>;
+      <CardCarousel /> : <AboutPage />;
 
     return (
       <div className="App">
