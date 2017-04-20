@@ -2,57 +2,65 @@
 
 .App-header {
   display: grid;
-  grid-template-areas: "name logos about pdf";
-  grit-template-columns: 25% 50% 12.5% 12.5%;
+  grid-template-areas: "name logo1 logo2 logo3 about pdf";
+  grid-template-columns: 39% 7% 7% 7% 20% 20%;
+  justify-content: fill;
   background-color: #222;
-  height: 50px;
-  padding: 20px;
+  padding: 5pt;
+  height: 50pt;
   color: white;
 }
 
 .Name {
-  grid-area: name;
-  line-height: 50px;
-  font-size: 250%;
+  grid-column: 1 / 2;
+  font-size: 5vw;
   color: white;
   background-color: transparent;
   border: none;
+  overflow: hidden;
 }
 
 .Logo {
-  grid-area: logos;
-  height: 40px;
-  width: 40px;
+  grid-column: 2 / 5;
   background-size: 100%;
+  max-height: 50pt;
+  max-width: 50pt;
   background-color: #222;
   border: none;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .LinkedIn {
+  grid-column: 2 / 3;
   background-image: url('./2000px-Linkedin_icon.svg.png');
 }
 
 .GitHub {
+  grid-column: 3 / 4;
   background-image: url('./GitHub-Mark/PNG/GitHub-Mark-Light-64px.png');
 }
 
 .Twitter {
+  grid-column: 4 / 5;
   background-image: url('./BrandGuidelineLogos/TwitterLogo.png');
 }
 
 .About {
-  grid-area: about;
-  line-height: 50px;
-  font-size: 125%;
+  grid-column: 5 / 6;
+  font-size: 3vw;
   color: white;
   background-color: transparent;
   border: none;
+  overflow: hidden;
 }
 
 .ResumeLink {
-  grid-area: pdf;
-  line-height: 50px;
-  font-size: 125%;
+  grid-column: 6 / 7;
+  font-size: 3vw;
   color: white;
   text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50pt;
 }

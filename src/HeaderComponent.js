@@ -10,17 +10,17 @@ export default class HeaderComponent extends Component {
               onClick={() => {this.props.onPageClick("main")}} >
           E. Hoops
         </button>
-        <div className="Logos">
-          <button className="Logo LinkedIn"
-            onClick={() => window.location.href="https://www.linkedin.com/in/erin-hoops-a7786935/"} >
-          </button>
-          <button className="Logo GitHub"
-            onClick={() => window.location.href="https://github.com/ehoops"} >
-          </button>
-          <button className="Logo Twitter"
-            onClick={() => window.location.href="https://twitter.com/Erin3112"}>
-          </button>
-        </div>
+
+        <button className="Logo LinkedIn"
+          onClick={() => window.location.href="https://www.linkedin.com/in/erin-hoops-a7786935/"} >
+        </button>
+        <button className="Logo GitHub"
+          onClick={() => window.location.href="https://github.com/ehoops"} >
+        </button>
+        <button className="Logo Twitter"
+          onClick={() => window.location.href="https://twitter.com/Erin3112"}>
+        </button>
+
         <button className="About"
               onClick={() => {this.props.onPageClick("about")}} >
           About Me
